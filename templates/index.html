@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>diabetic prediction web app</title>
+      <link href ="{{url_for('static', filename='style.css')}}"  rel = "stylesheet" type ="text/css">
+   </head>
+   <body>
+       <header>
+          <div class  = 'top'>
+             <ul class = 'nav-menu'>
+             <li class = 'home-btn'> <a href = "">Home</a></li>
+             <li> <a href = "about.html">About</a></li>
+          
+             </ul>
+         </div>
+         <div class = 'tagline'>
+         <h1>Let's beat Diabetes, Diabetes must never win!..</h1>
+         </div>
+         
+         <div class = "Structure">
+          <h2> Diabetes Prediction </h2>
+         </div>
+         
+         <div>
+             <form action = "/predict" method = "POST" class  ="table_content">
+             
+         
+                <div class = "Column-1">
+                     <input type = "number" step = "any" name = "preg" id = "preg" placeholder = "Pregnancies">
+                     <input type = "number" step = "any" name = "gl" id = "gl" placeholder = "Glucose">
+                     <input type = "number" step = "any" name = "BP" id = "BP" placeholder = "Bloodpressure">
+                     <input type = "number" step = "any" name = "ST" id = "ST" placeholder = "Skinthickness" >
+              
+               </div>
+               <div class = "Column-2">
+                     <input type = "number" step = "any" name = "ins" id = "ins" placeholder = "Insulin" >
+                     <input type = "number" step = "any" name = "Bmi" id = "Bmi" placeholder = "BMI">
+                     <input type = "number" step = "any" name = "DPF" id = "DPF" placeholder = "DiabetesPedigreeFunction" >
+                     <input type = "number" step = "any" name = "age" id = "age" placeholder = "Age" >
+                     
+                </div>
+                <div class ="submit">
+                     <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>      
+                </div>
+             </form>
+             
+        </div>
+         <P style="position : relative; left:190px;top:20px;">{{prediction_text}}</p>
+         
+       
+       </header>
+   
+   </body>
+
+</html> 
