@@ -1,0 +1,23 @@
+* 
+{
+margin = 35;
+padding = 20;
+}
+
+
+.para {
+    position:relative;
+    top:5px;
+    text-align:justify;
+    margin:25px;
+    word-spacing: 2px;
+    line-height: 1.4;
+}
+
+
+.End{
+  position:absolute;
+  width:1000px;
+  margin-left:500px;
+}
+
